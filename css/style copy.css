@@ -1,0 +1,98 @@
+
+header video{
+    max-height: 500px;
+}
+/* Sutil rotación para simular fotos colocadas a mano en un álbum */
+/* .transform-rotate-left {
+    transform: rotate(-1.5deg);
+    transition: transform 0.3s ease;
+}
+
+.transform-rotate-right {
+    transform: rotate(1.5deg);
+    transition: transform 0.3s ease;
+}
+
+.transform-rotate-left:hover,
+.transform-rotate-right:hover {
+    transform: rotate(0deg) scale(1.01);
+} */
+
+/* Tipografía de pies de foto si deseas algo más orgánico */
+.tracking-wider {
+    letter-spacing: 0.1em;
+}
+.fs-7 {
+    font-size: 0.85rem;
+}
+.fs-7 {
+    font-size: 0.82rem; /* Un poco más pequeño que el small estándar */
+    letter-spacing: 0.01em;
+    color: rgb(112, 112, 112)
+    ;
+}/* Proporción 3:4 */
+.ratio-3x4 {
+    --bs-aspect-ratio: 133.33%; /* (4 / 3) * 100 */
+}
+
+.trayectoria-section figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fs-7 {
+    font-size: 0.82rem;
+}
+
+/* Contenedor del Stack */
+.photo-stack {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+    /* Eliminamos el min-height fijo para evitar colapsos/desbordamientos */
+}
+
+/* Primera tarjeta: marca la altura y tamaño real del contenedor */
+.photo-stack .stack-card:first-child {
+    position: relative;
+}
+
+/* Siguientes tarjetas: se enciman exactamente sobre la primera */
+.photo-stack .stack-card:nth-child(n+2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo base de todas las tarjetas */
+.stack-card {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 1;
+    background-color: #f8f9fa; /* bg-light */
+}
+
+/* Tarjeta INACTIVA (Atrás) */
+.stack-card:not(.active-card) {
+    z-index: 1 !important;
+    transform: rotate(3.5deg) translate(10px, 8px) scale(0.97);
+    opacity: 0.85;
+    filter: brightness(0.94);
+}
+
+/* Tarjeta ACTIVA (Al frente) */
+.stack-card.active-card {
+    z-index: 10 !important;
+    transform: rotate(-1.5deg) translate(0, 0) scale(1);
+    opacity: 1;
+    filter: brightness(1);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Hover suave en la pila */
+.photo-stack:hover .stack-card.active-card {
+    transform: rotate(0deg) scale(1.01);
+}

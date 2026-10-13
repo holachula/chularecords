@@ -1,0 +1,98 @@
+/* Variables y Estilos Generales */
+:root {
+    --bs-body-font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.tracking-tight {
+    letter-spacing: -0.02em;
+}
+
+.fs-7 {
+    font-size: 0.83rem;
+}
+
+/* Proporción 3:4 */
+.ratio-3x4 {
+    --bs-aspect-ratio: 133.33%;
+}
+
+/* Tarjeta de Obra */
+.artwork-card {
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
+}
+
+.artwork-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Imagen dentro de la tarjeta */
+.artwork-img {
+    transition: transform 0.5s ease;
+}
+
+.artwork-card:hover .artwork-img {
+    transform: scale(1.03);
+}
+
+/* Ajustes para Navbar */
+.nav-link {
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+}
+
+/* Stack de Fotos Interactivo */
+.photo-stack {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.photo-stack .stack-card:first-child {
+    position: relative;
+}
+
+.photo-stack .stack-card:nth-child(n+2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.stack-card {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 1;
+}
+
+.stack-card:not(.active-card) {
+    z-index: 1 !important;
+    transform: rotate(3.5deg) translate(10px, 8px) scale(0.97);
+    opacity: 0.85;
+    filter: brightness(0.94);
+}
+
+.stack-card.active-card {
+    z-index: 10 !important;
+    transform: rotate(-1.5deg) translate(0, 0) scale(1);
+    opacity: 1;
+    filter: brightness(1);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12) !important;
+}
+
+.stack-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0.7rem;
+    pointer-events: none;
+}
+
+.max-w-sm {
+    max-width: 380px;
+}

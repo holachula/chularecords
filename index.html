@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Villeda (CHULA) — Artista Visual & Ilustrador</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+        <!--FAVICON-->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#00aba9">
+        <meta name="msapplication-config" content="favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+</head>
+<body class="bg-white text-dark">
+
+    <!-- Navbar Minimalista (Sticky) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold tracking-tight text-dark" href="#">
+                Jonathan Villeda <span class="fw-normal text-muted fs-6 ms-1">(a.k.a. CHULA)</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-lg-4 mt-3 mt-lg-0">
+                    <li class="nav-item"><a class="nav-link active fw-medium" href="#obra">Obra</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary fw-medium" href="#procesos">Procesos & Estudio</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary fw-medium" href="#trayectoria">Semblanza & Trayectoria</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary fw-medium" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Introducción Breve -->
+    <header class="py-5 bg-light border-bottom">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-lg-8">
+                    <span class="badge bg-dark text-white px-3 py-2 mb-3 rounded-1 fw-normal">Selección de Obra</span>
+                    <h1 class="display-5 fw-bold mb-3">Jonathan Villeda</h1>
+                    <p class="lead text-secondary mb-0">
+                        Artista visual e ilustrador originario de la periferia del Valle de México. Su trabajo explora la narrativa gráfica, la gráfica impresa, la ficción y la vida urbana a través del trazo minucioso y el dibujo análogo y digital.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Grid de Obra Seleccionada -->
+    <section id="obra" class="py-5">
+        <div class="container py-3">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <div>
+                    <h2 class="h3 fw-bold mb-1">Obra Reciente & Selección Gráfica</h2>
+                    <p class="text-muted small mb-0">Haz clic en cualquier pieza para ampliar y consultar detalle técnico.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Pieza 1: La Cola -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="artwork-card bg-light rounded-3 overflow-hidden border shadow-sm h-100" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#artworkModal" 
+                        data-imgs="assets/img/la_cola_2.jpg, assets/img/la_cola_3.jpg, assets/img/la_cola_4.jpg" 
+                        data-title="La Cola" 
+                        data-tech="Estilógrafos sobre papel de algodón" 
+                        data-year="Octubre 2026"
+                        data-desc="'La cola empieza en la otra cuadra'. La cola es el término popular que usamos en la Ciudad  de México para referirnos a una fila. Mi ilustración parte de observar día con día a las personas de a pie, la clase que sostiene el todo de esta gran ciudad.">
+                        
+                        <div class="ratio ratio-3x4 overflow-hidden">
+                            <img src="assets/img/la_cola.jpg" class="object-fit-cover artwork-img" alt="La Cola">
+                        </div>
+                        <div class="p-3 bg-white">
+                            <h3 class="h6 fw-bold mb-1 text-dark">La Cola</h3>
+                            <p class="text-muted fs-7 mb-0">Estilógrafos sobre papel de algodón • 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pieza 2: Oxxo -->
+                 
+                <div class="col-md-6 col-lg-4">
+                    <div class="artwork-card bg-light rounded-3 overflow-hidden border shadow-sm h-100" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#artworkModal" 
+                        data-imgs="assets/img/oxxo_2.jpg, assets/img/oxxo_3.jpg, assets/img/oxxo_4.jpg" 
+                        data-title="Oxxo" 
+                        data-tech="Tinta y color digital" 
+                        data-year="2024"
+                        data-desc="">
+                        
+                        <div class="ratio ratio-3x4 overflow-hidden">
+                            <img src="assets/img/oxxo.jpg" class="object-fit-cover artwork-img" alt="La Cola">
+                        </div>
+                        <div class="p-3 bg-white">
+                            <h3 class="h6 fw-bold mb-1 text-dark">Oxxo</h3>
+                            <p class="text-muted fs-7 mb-0">Tinta y color digital • 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pieza 6: Proyecto Gran Formato / Mural -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="artwork-card bg-light rounded-3 overflow-hidden border shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#artworkModal"
+                          data-imgs="assets/img/diablera_2.jpg, assets/img/diablera_3.jpg, assets/img/diablera_4.jpg, assets/img/diablera_5.jpg" 
+                         data-title="Diablera" 
+                         data-tech="Acrílico y esmalte sobre muro" 
+                         data-year="2017 - 2018"
+                         data-desc="Intervención a gran escala desarrollada en la Central de Abastos de la CDMX en colaboración con We Do Things y la ONU.">
+                        <div class="ratio ratio-3x4 overflow-hidden">
+                            <img src="assets/img/diablera_1.jpg" class="object-fit-cover artwork-img" alt="Central de Muros" onerror="this.src='https://placehold.co/600x800?text=Mural+Gran+Formato';">
+                        </div>
+                        <div class="p-3 bg-white">
+                            <h3 class="h6 fw-bold mb-1 text-dark">Diablera</h3>
+                            <p class="text-muted fs-7 mb-0">Acrílico sobre muro • 2017 - 2018</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pieza 3: Paradero-->
+                 
+                <div class="col-md-6 col-lg-4">
+                    <div class="artwork-card bg-light rounded-3 overflow-hidden border shadow-sm h-100" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#artworkModal" 
+                        data-imgs="assets/img/paradero_2.jpeg" 
+                        data-title="Paradero" 
+                        data-tech="Tinta" 
+                        data-year="2023"
+                        data-desc="">
+                        
+                        <div class="ratio ratio-3x4 overflow-hidden">
+                            <img src="assets/img/paradero.jpg" class="object-fit-cover artwork-img" alt="La Cola">
+                        </div>
+                        <div class="p-3 bg-white">
+                            <h3 class="h6 fw-bold mb-1 text-dark">Paradero</h3>
+                            <p class="text-muted fs-7 mb-0">Tinta • 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pieza 3: Surtido-->
+                 
+                <div class="col-md-6 col-lg-4">
+                    <div class="artwork-card bg-light rounded-3 overflow-hidden border shadow-sm h-100" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#artworkModal" 
+                        data-imgs="assets/img/surtido.jpg" 
+                        data-title="Surtido" 
+                        data-tech="Tinta y color digital" 
+                        data-year="2023"
+                        data-desc="">
+                        
+                        <div class="ratio ratio-3x4 overflow-hidden">
+                            <img src="assets/img/Surtido.jpg" class="object-fit-cover artwork-img" alt="La Cola">
+                        </div>
+                        <div class="p-3 bg-white">
+                            <h3 class="h6 fw-bold mb-1 text-dark">Surtido</h3>
+                            <p class="text-muted fs-7 mb-0">Tinta • 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pieza 3: Zapatería -->
+                 
+                <div class="col-md-6 col-lg-4">
+                    <div class="artwork-card bg-light rounded-3 overflow-hidden border shadow-sm h-100" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#artworkModal" 
+                        data-imgs="assets/img/zapateria.jpg" 
+                        data-title="Zapateria" 
+                        data-tech="Tinta" 
+                        data-year="2024"
+                        data-desc="">
+                        
+                        <div class="ratio ratio-3x4 overflow-hidden">
+                            <img src="assets/img/zapateria.jpg" class="object-fit-cover artwork-img" alt="La Cola">
+                        </div>
+                        <div class="p-3 bg-white">
+                            <h3 class="h6 fw-bold mb-1 text-dark">Zapateria</h3>
+                            <p class="text-muted fs-7 mb-0">Tinta • 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pieza 3: Esquina 3-->
+                 
+                <div class="col-md-6 col-lg-4">
+                    <div class="artwork-card bg-light rounded-3 overflow-hidden border shadow-sm h-100" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#artworkModal" 
+                        data-imgs="assets/img/esquina_3.jpg" 
+                        data-title="Zapateria" 
+                        data-tech="Digital , Pieza seleccionada Catálogo de Ilustración Latinoamericana 2020" 
+                        data-year="2024"
+                        data-desc="">
+                        
+                        <div class="ratio ratio-3x4 overflow-hidden">
+                            <img src="assets/img/esquina_3.jpg" class="object-fit-cover artwork-img" alt="La Cola">
+                        </div>
+                        <div class="p-3 bg-white">
+                            <h3 class="h6 fw-bold mb-1 text-dark">Esquina 3</h3>
+                            <p class="text-muted fs-7 mb-0">Color digital 2020</p>
+                            <p class="text-muted fs-7 mb-0"><i>Pieza seleccionada Catálogo de Ilustración Latinoamericana 2020</i></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pieza 5: Narrativa / Ficción Urbana -->
+                <!-- <div class="col-md-6 col-lg-4">
+                    <div class="artwork-card bg-light rounded-3 overflow-hidden border shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#artworkModal"
+                         data-img="assets/img/transito.jpg" 
+                         data-title="Tránsito & Caos" 
+                         data-tech="Tinta china y técnica mixta" 
+                         data-year="2025"
+                         data-desc="Secuencia narrativa sobre la experiencia del transporte público y el tránsito en el Valle de México.">
+                        <div class="ratio ratio-3x4 overflow-hidden">
+                            <img src="assets/img/transito.jpg" class="object-fit-cover artwork-img" alt="Tránsito" onerror="this.src='https://placehold.co/600x800?text=Tr%C3%A1nsito+(2025)';">
+                        </div>
+                        <div class="p-3 bg-white">
+                            <h3 class="h6 fw-bold mb-1 text-dark">Tránsito & Caos</h3>
+                            <p class="text-muted fs-7 mb-0">Tinta china y técnica mixta • 2025</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Pieza 6: Proyecto Gran Formato / Mural -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="artwork-card bg-light rounded-3 overflow-hidden border shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#artworkModal"
+                          data-imgs="assets/img/matachin_2.jpg, assets/img/matachin_3.jpg" 
+                         data-title="Matachin" 
+                         data-tech="Acrílico y esmalte sobre muro" 
+                         data-year="2017 - 2018"
+                         data-desc="Intervención en el cerro de Altamira en Monterrey Nuevo Léon en colaboración con COMEX y PROAGRUPA">
+                        <div class="ratio ratio-3x4 overflow-hidden">
+                            <img src="assets/img/matachin.jpg" class="object-fit-cover artwork-img" alt="Central de Muros" onerror="this.src='https://placehold.co/600x800?text=Mural+Gran+Formato';">
+                        </div>
+                        <div class="p-3 bg-white">
+                            <h3 class="h6 fw-bold mb-1 text-dark">Matachin</h3>
+                            <p class="text-muted fs-7 mb-0">Acrílico sobre muro • 2018</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Procesos, Taller y Gran Formato (Trasfondo Técnico) -->
+    <section id="procesos" class="py-5 bg-light border-top border-bottom trayectoria-section">
+        <div class="container py-4">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <span class="badge bg-dark text-white px-3 py-2 mb-2 rounded-1 fw-normal">Investigación & Soportes</span>
+                    <h2 class="h3 fw-bold mb-2">Procesos de Taller</h2>
+                    <p class="text-secondary leading-relaxed mb-0">
+                        Mi trabajo transita entre el dibujo, la serigrafía, la narrativa y la intervención en el espacio público a gran escala.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Fila A: Video de Proceso + Texto -->
+            <div class="row align-items-center g-5 mb-5 pb-4 border-bottom">
+                <div class="col-lg-6">
+                    <figure class="m-0">
+                        <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm border bg-black">
+                            <video class="w-100 h-100 object-fit-cover" autoplay muted loop playsinline>
+                                <source src="assets/video_portada.mp4" type="video/mp4">
+                                <source src="assets/video.webm" type="video/webm">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                        <figcaption class="text-start text-muted fs-7 fst-italic mt-2 ps-1">
+                            <span class="fw-semibold text-dark">"La Cola"</span> (Proceso) — Estilógrafos sobre papel de algodón, octubre 2026.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-3">
+                        <span class="text-uppercase tracking-wider text-muted fs-7 fw-semibold d-block mb-1">Paciencia & Trazo </span>
+                        <h3 class="h4 fw-bold mb-3">La construcción del dibujo en la mesa de trabajo</h3>
+                        <p class="text-secondary leading-relaxed mb-3">
+                            Algunas piezas comienzan en papel estilógrafos , plumones, pinturas entre otros. El proceso nunca se detiene.
+                        </p>
+                        <p class="text-secondary leading-relaxed mb-0">
+                            A veces se traslada a matrices físicas para impresión en serigrafía u otros medios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fila B: Stacks Interactivos de Muralismo & Fanzines 
+            <div class="row align-items-center g-5 pt-3">
+                <div class="col-lg-6">
+                    <div class="pe-lg-3">
+                        <span class="text-uppercase tracking-wider text-muted fs-7 fw-semibold d-block mb-1">Arte Público & Gráfica Autónoma</span>
+                        <h3 class="h4 fw-bold mb-3">Del fanzine al muro de gran formato</h3>
+                        <p class="text-secondary leading-relaxed mb-3">
+                            Llevar el dibujo a la calle mediante intervenciones murales en la Central de Abastos o festivales en el país permite experimentar la escala monumental y el diálogo comunitario directos.
+                        </p>
+                        <p class="text-secondary leading-relaxed mb-0">
+                            Paralelamente, la autogestión editorial a través de festivales como <em>Matazanos</em> o encuentros internacionales en Italia y Eslovenia sostiene una producción gráfica libre y de libre circulación.
+                        </p>
+                    </div>
+                </div>-->
+                <!--    
+                <div class="col-lg-6">
+                    Contenedor del Stack de Fotos Interactivo 
+                    <div class="photo-stack">
+                        Foto 1 (Activa) 
+                        <figure class="stack-card active-card m-0 p-3 bg-white rounded-3 shadow-sm border">
+                            <div class="ratio ratio-3x4 rounded-2 overflow-hidden mb-2">
+                                <img src="assets/img/mural_muros.jpg" class="object-fit-cover" alt="Central de Muros" onerror="this.src='https://placehold.co/600x800?text=Central+de+Muros+(Mural)';">
+                            </div>
+                            <figcaption class="text-start text-muted fs-7 fst-italic ps-1">
+                                <span class="fw-semibold text-dark">Central de Muros</span> — Intervención en Central de Abastos CDMX, 2017.
+                            </figcaption>
+                            <span class="stack-badge badge bg-dark opacity-75">Haz clic para voltear</span>
+                        </figure>
+
+                        Foto 2 (Atrás) 
+                        <figure class="stack-card m-0 p-3 bg-white rounded-3 shadow-sm border">
+                            <div class="ratio ratio-3x4 rounded-2 overflow-hidden mb-2">
+                                <img src="assets/img/fanzines.jpg" class="object-fit-cover" alt="Edición de Fanzines" onerror="this.src='https://placehold.co/600x800?text=Matazanos+Zine+Fest';">
+                            </div>
+                            <figcaption class="text-start text-muted fs-7 fst-italic ps-1">
+                                <span class="fw-semibold text-dark">Matazanos & Gráfica Impresa</span> — Ediciones en serigrafía y fanzines.
+                            </figcaption>
+                            <span class="stack-badge badge bg-dark opacity-75">Haz clic para voltear</span>
+                        </figure>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Semblanza & CV Institucional -->
+    <section id="trayectoria" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10">
+                    <span class="badge bg-dark text-white px-3 py-2 mb-3 rounded-1 fw-normal">Perfil Curricular</span>
+                    <h2 class="h3 fw-bold mb-4">Semblanza & Trayectoria</h2>
+                    
+                    <!-- Semblanza Narrativa -->
+                    <div class="bg-light p-4 p-md-5 rounded-3 border mb-5">
+                        <p class="lead text-dark fw-medium mb-3">
+                            Jonathan Villeda (a.k.a. CHULA) es artista visual y diseñador originario de la periferia del Valle de México. Licenciado en Artes Visuales por la Facultad de Artes y Diseño (FAD-UNAM), su trabajo explora la narrativa gráfica, la ficción y la vida urbana a través del dibujo, la gráfica impresa y los medios digitales.
+                        </p>
+                        <p class="text-secondary leading-relaxed mb-0">
+                            Su producción transita entre el dibujo,  lo digital, la narrativa, la serigrafía y las intervenciones a gran escala en el espacio público, tomando como motor la observación del tránsito, el caos cotidiano y la cultura popular.
+                        </p>
+                    </div>
+
+                    <!-- Desglose Tipo CV para Consulta Rápida de Jurado -->
+                    <div class="row g-4">
+                        <!-- Columna 1: Selecciones & Distinciones + Formación -->
+                        <div class="col-md-6">
+                            <div class="card border-0 bg-transparent h-100">
+                                <div class="card-body p-0">
+                                    <h3 class="h5 fw-bold text-dark mb-3 pb-2 border-bottom">
+                                        <i class="bi bi-award me-2 text-dark"></i>Selecciones & Distinciones
+                                    </h3>
+                                    <ul class="list-unstyled text-secondary small lh-lg mb-4">
+                                        <li class="mb-2"><strong>2020:</strong> Programa de Mentoría <em>Piso 16 UNAM</em>.</li>
+                                        <li class="mb-2"><strong>2020:</strong> Catálogo de Ilustración Latinoamericana.</li>
+                                        <li class="mb-2"><strong>2016 – Presente:</strong> Miembro activo de <em>Jardín del Arte A.C.</em>, Ciudad de México.</li>
+                                    </ul>
+
+                                    <h3 class="h5 fw-bold text-dark mb-3 pb-2 border-bottom">
+                                        <i class="bi bi-mortarboard me-2 text-dark"> </i>Formación Academicista
+                                    </h3>
+                                    <p class="text-secondary small mb-0">
+                                        <strong>Licenciatura en Artes Visuales</strong><br>
+                                        Facultad de Artes y Diseño (FAD) — Universidad Nacional Autónoma de México (UNAM).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Columna 2: Arte Público & Muralismo -->
+                        <div class="col-md-6">
+                            <div class="card border-0 bg-transparent h-100">
+                                <div class="card-body p-0">
+                                    <h3 class="h5 fw-bold text-dark mb-3 pb-2 border-bottom">
+                                        <i class="bi bi-brush me-2 text-dark"></i>Arte Público & Muralismo
+                                    </h3>
+                                    <ul class="list-unstyled text-secondary small lh-lg mb-0">
+                                        <li class="mb-2"><strong>2017 & 2018:</strong> <em>Central de Muros</em> (2da Etapa), en colaboración con We Do Things, ONU y Pinturas OSEL. Central de Abastos, CDMX.</li>
+                                        <li class="mb-2"><strong>2018:</strong> Proyecto <em>COLOSAL</em> con Colectivo Tomate. Monterrey, Nuevo León.</li>
+                                        <li class="mb-2"><strong>2017:</strong> <em>Leyendas de Altamira</em> con PROAGRUPA. Monterrey, Nuevo León.</li>
+                                        <li class="mb-2"><strong>2010:</strong> <em>Ciudad Mural Zacatecas</em> con Colectivo Tomate. Zacatecas, México.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fila Completa Inferior: Exposiciones & Festivales -->
+                        <div class="col-12 mt-4">
+                            <div class="p-4 bg-light rounded-3 border">
+                                <h3 class="h5 fw-bold text-dark mb-3 pb-2 border-bottom">
+                                    <i class="bi bi-journal-richtext me-2 text-dark"></i>Exposiciones, Festivales & Proyectos Autogestivos
+                                </h3>
+                                <div class="row g-3 text-secondary small">
+                                    <div class="col-md-6">
+                                        <p class="fw-bold text-dark mb-1">Exposiciones Individuales & Colectivas:</p>
+                                        <ul class="ps-3 mb-0">
+                                            <li><em>Direcciones (2da Edición)</em> — Facultad de Artes y Diseño, UNAM (2017).</li>
+                                            <li>Exposición Individual — <em>Foro Indie Rocks!</em> (2015).</li>
+                                            <li><em>Horchata Sentimental</em> — Muestra Colectiva de Arte (2010).</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="fw-bold text-dark mb-1">Festivales Internacionales & Autogestión:</p>
+                                        <ul class="ps-3 mb-0">
+                                            <li><em>Zine Censura</em> — Dobra Vaga (Ljubljana, Eslovenia, 2017).</li>
+                                            <li><em>Crack Festival</em> (Forte Prenestino, Italia).</li>
+                                            <li>Ex-Coorganizador de <em>Matazanos Zine Festival</em>.</li>
+                                            <li>Participante en Fanzinorama, Zine Amibas y publicaciones independientes.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Footer & Contacto -->
+    <footer id="contacto" class="py-5 bg-dark text-white">
+        <div class="container py-4">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <span class="text-uppercase tracking-wider text-secondary fs-7 fw-semibold">Contacto & Portafolio</span>
+                    <h3 class="display-6 fw-bold text-white mt-1 mb-3">Jonathan Villeda</h3>
+                    <p class="text-secondary mb-4 leading-relaxed">
+                        Ubicado en la Ciudad de México. Disponible para colaboraciones, proyectos de ilustración, comisiones de gran formato, gestión gráfica y consultas curatoriales.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <!-- Botón Dossier/CV PDF (Altamente valorado por jueces) -->
+                        <!-- <a href="assets/Dossier_Jonathan_Villeda_2026.pdf" download class="btn btn-outline-light px-4 py-2">
+                            <i class="bi bi-file-earmark-pdf me-2"></i>Descargar Dossier / CV (PDF)
+                        </a> -->
+                        <a href="mailto:hola.chularecords@gmail.com" class="btn btn-light text-dark px-4 py-2 fw-medium">
+                            <i class="bi bi-envelope-fill me-2"></i>Enviar Correo
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 text-lg-end">
+                    <div class="p-4 bg-secondary bg-opacity-10 rounded-3 border border-secondary border-opacity-25 d-inline-block text-start w-100 max-w-sm">
+                        <p class="small text-secondary mb-2">Redes & Ubicación:</p>
+                        <p class="mb-2">
+                            <a href="https://instagram.com/chula.dibuja" target="_blank" class="text-white text-decoration-none fw-semibold fs-6">
+                                <i class="bi bi-instagram me-2"></i>@chula.dibuja
+                            </a>
+                        </p>
+                        <p class="text-secondary small mb-0">
+                            <i class="bi bi-geo-alt me-1"></i> Ciudad de México, México.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5 border-secondary border-opacity-50">
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center text-secondary small">
+                <p class="mb-2 mb-sm-0">&copy; 2026 Jonathan Villeda. Todos los derechos reservados.</p>
+                <p class="mb-0">Sitio de artista preparado para revisión de portafolio.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Lightbox (Detalle para el jurado) -->
+    <!-- Modal Lightbox Único con Carrusel de Imágenes -->
+    <div class="modal fade" id="artworkModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-4 align-items-center">
+                        <!-- Columna Izquierda: Carrusel de Galería/Detalles -->
+                        <div class="col-lg-8">
+                            <div id="artworkCarousel" class="carousel slide carousel-fade bg-light rounded-2 overflow-hidden border" data-bs-ride="false">
+                                <!-- Diapositivas (Generadas dinámicamente por JS) -->
+                                <div class="carousel-inner" id="carouselSlides">
+                                    <!-- Aquí se insertan las imágenes -->
+                                </div>
+                                
+                                <!-- Controles del Carrusel (Anterior / Siguiente) -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#artworkCarousel" data-bs-slide="prev" id="carouselPrevBtn">
+                                    <span class="carousel-control-prev-icon bg-dark bg-opacity-50 p-3 rounded-circle" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#artworkCarousel" data-bs-slide="next" id="carouselNextBtn">
+                                    <span class="carousel-control-next-icon bg-dark bg-opacity-50 p-3 rounded-circle" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Columna Derecha: Ficha Técnica & Descripción -->
+                        <div class="col-lg-4">
+                            <h3 id="modalTitle" class="h4 fw-bold text-dark mb-2"></h3>
+                            <p id="modalTech" class="text-muted fs-7 mb-1"></p>
+                            <span id="modalYear" class="badge bg-dark mb-3 fw-normal"></span>
+                            <hr class="my-3">
+                            <p id="modalDesc" class="text-secondary small leading-relaxed"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script para cargar dinámicamente la información en el modal cuando el jurado da clic
+        document.addEventListener('DOMContentLoaded', () => {
+        const artworkModal = document.getElementById('artworkModal');
+        
+        if (artworkModal) {
+            artworkModal.addEventListener('show.bs.modal', event => {
+                const button = event.relatedTarget;
+                
+                // 1. Obtener lista de imágenes (separadas por comas)
+                const imgsRaw = button.getAttribute('data-imgs') || '';
+                const imgList = imgsRaw.split(',').map(url => url.trim()).filter(url => url !== '');
+                
+                // 2. Rellenar datos de texto
+                document.getElementById('modalTitle').textContent = button.getAttribute('data-title');
+                document.getElementById('modalTech').textContent = button.getAttribute('data-tech');
+                document.getElementById('modalYear').textContent = button.getAttribute('data-year');
+                document.getElementById('modalDesc').textContent = button.getAttribute('data-desc');
+
+                // 3. Generar slides para el carrusel
+                const carouselSlides = document.getElementById('carouselSlides');
+                const prevBtn = document.getElementById('carouselPrevBtn');
+                const nextBtn = document.getElementById('carouselNextBtn');
+                
+                carouselSlides.innerHTML = ''; // Limpiar anteriores
+
+                imgList.forEach((imgUrl, index) => {
+                    const isActive = index === 0 ? 'active' : '';
+                    const slideHTML = `
+                        <div class="carousel-item ${isActive}">
+                            <div class="d-flex align-items-center justify-content-center bg-light" style="min-height: 400px; max-height: 70vh;">
+                                <img src="${imgUrl}" class="d-block img-fluid object-fit-contain w-100" style="max-height: 70vh;" alt="Detalle de obra">
+                            </div>
+                        </div>
+                    `;
+                    carouselSlides.innerHTML += slideHTML;
+                });
+
+                // 4. Si solo hay 1 imagen, ocultar los botones de navegación del carrusel
+                if (imgList.length <= 1) {
+                    prevBtn.classList.add('d-none');
+                    nextBtn.classList.add('d-none');
+                } else {
+                    prevBtn.classList.remove('d-none');
+                    nextBtn.classList.remove('d-none');
+                }
+            });
+        }
+    });
+    </script>
+    <script>
+    // Script para la interacción de voltear las fotos del Stack al dar clic
+    document.addEventListener('DOMContentLoaded', () => {
+        const photoStacks = document.querySelectorAll('.photo-stack');
+
+        photoStacks.forEach(stack => {
+            const cards = stack.querySelectorAll('.stack-card');
+
+            stack.addEventListener('click', () => {
+                cards.forEach(card => {
+                    card.classList.toggle('active-card');
+                });
+            });
+        });
+    });
+</script>
+</body>
+</html>
