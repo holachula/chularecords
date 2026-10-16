@@ -1,0 +1,109 @@
+
+[
+  {
+    "id": "p1",
+    "title": "Microbús - Serigrafía",
+    "category": "Prints",
+    "price": 500,
+    "images": [
+      "assets/productos/serigrafia_microbus_detalle1.jpg",
+      "assets/productos/serigrafia_microbus_detalle2.jpg",
+      "assets/productos/serigrafia_microbus.jpg"
+    ],
+    "description": "Impresión en serigrafía a 5 tintas, firmado a mano. 33x48 cm."
+  },
+  {
+    "id": "p2",
+    "title": "Oxxo - Impresión digital",
+    "category": "Prints",
+    "price": 500,
+    "images": [
+      "assets/productos/poster_oxxo.jpg",
+      "assets/productos/poster_oxxo_detalle1.jpg",
+      "assets/productos/poster_oxxo_detalle2.jpg",
+      "assets/productos/poster_oxxo_detalle3.jpg",
+      "assets/productos/poster_oxxo_detalle4.jpg"
+    ],
+    "description": "Impresión digital tamaño poster, firmado a mano. 50x70 cm."
+  },
+  {
+    "id": "p3",
+    "title": "Diablos - Impresión digital",
+    "category": "Prints",
+    "price": 500,
+    "images": [
+      "assets/productos/poster_diablos_detalle1.jpg",
+      "assets/productos/poster_diablos.jpg",
+      "assets/productos/poster_diablos_detalle2.jpg",
+      "assets/productos/poster_diablos_detalle3.jpg",
+      "assets/productos/poster_diablos_detalle4.jpg"
+    ],
+    "description": "Impresión digital tamaño poster, firmado a mano. 50x70 cm."
+  },
+  {
+    "id": "p4",
+    "title": "La esquina azul - Serigrafía",
+    "category": "Prints",
+    "price": 500,
+    "images": [
+      "assets/productos/serigrafia_la_esquina_azul.jpg",
+      "assets/productos/serigrafia_la_esquina_azul_detalle1.jpg"
+    ],
+    "description": "Impresión en serigrafía a 4 tintas, sobre papel azul, firmado a mano. 33x48 cm."
+  },
+  {
+    "id": "p5",
+    "title": "La esquina roja - Serigrafía",
+    "category": "Prints",
+    "price": 500,
+    "images": [
+      "assets/productos/serigrafia_la_esquina_roja.jpg",
+      "assets/productos/serigrafia_la_esquina_roja_detalle1.jpg"
+    ],
+    "description": "Impresión en serigrafía a 4 tintas, sobre papel rojo, firmado a mano. 33x48 cm."
+  },
+  {
+    "id": "p6",
+    "title": "La esquina amarilla - Serigrafía",
+    "category": "Prints",
+    "price": 500,
+    "images": [
+      "assets/productos/serigrafia_la_esquina_amarilla.jpg",
+      "assets/productos/serigrafia_la_esquina_amarilla_detalle1.jpg"
+    ],
+    "description": "Impresión en serigrafía a 4 tintas, sobre papel amarillo, firmado a mano. 33x48 cm."
+  },
+  {
+    "id": "p7",
+    "title": "Las esquinas (Colección) - Serigrafía",
+    "category": "Prints",
+    "price": 1200,
+    "images": [
+      "assets/productos/serigrafias_las_esquinas.jpg",
+      "assets/productos/serigrafias_las_esquinas_detalle1.jpg"
+    ],
+    "description": "Impresiones en serigrafía a 4 tintas, sobre papeles de color, firmadas a mano. 33x48 cm."
+  },
+  {
+    "id": "p8",
+    "title": "Microbús - Sticker en serigrafía",
+    "category": "Stickers",
+    "price": 50,
+    "images": [
+      "assets/productos/sticker_microbus.jpg",
+      "assets/productos/sticker_microbus_detalle1.jpg"
+    ],
+    "description": "Sticker impreso en serigrafía vinil a 4 tintas, 20 cm."
+  },
+  {
+    "id": "p9",
+    "title": "Taqueria - Sticker en serigrafía",
+    "category": "Stickers",
+    "price": 50,
+    "images": [
+      "assets/productos/sticker_taqueria.jpg",
+      "assets/productos/sticker_taqueria_detalle1.jpg"
+    ],
+    "description": "Sticker impreso en serigrafía vinil a 4 tintas, 20 cm."
+  }
+]

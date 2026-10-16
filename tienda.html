@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo & Merch</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles_tienda.css">
+        <!--FAVICON-->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#00aba9">
+        <meta name="msapplication-config" content="favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <!-- Navbar Minimalista (Sticky) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold tracking-tight text-dark" href="index.html">
+                Jonathan Villeda <span class="fw-normal text-muted fs-6 ms-1">(a.k.a. CHULA)</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-lg-4 mt-3 mt-lg-0">
+                    <li class="nav-item"><a class="nav-link text-secondary fw-medium"" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary fw-medium" href="index.html#procesos">Procesos & Estudio</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary fw-medium" href="index.html#trayectoria">Semblanza & Trayectoria</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary fw-medium" href="index.html#contacto"/#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link  active fw-medium" href="tienda.html">Merch</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+  <header class="header">
+    
+    <h1>Merch Merch Merch</h1>
+    <button id="cart-toggle-btn" class="btn btn-dark rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#cart-modal">
+    🛒 Carrito (<span id="cart-count">0</span>)
+    </button>
+  </header>
+
+  <main class="container">
+    <section id="catalog-grid" class="catalog-grid">
+      <!-- Los productos se cargan dinámicamente desde JS -->
+    </section>
+  </main>
+
+
+<!-- Modal de Detalle de Producto -->
+<div class="modal fade" id="productDetailModal" tabindex="-1" aria-labelledby="productDetailModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productDetailModalLabel">Detalle del Producto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4">
+          <!-- Columna Izquierda: Carousel Grande -->
+          <div class="col-md-8">
+            <div id="modalProductCarousel" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-indicators" id="modalCarouselIndicators"></div>
+              <div class="carousel-inner" id="modalCarouselInner"></div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#modalProductCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#modalProductCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+          <!-- Columna Derecha: Información -->
+          <div class="col-md-4 d-flex flex-column justify-content-between">
+            <div>
+              <span class="badge bg-secondary mb-2" id="modalProductCategory"></span>
+              <h3 id="modalProductTitle" class="h4 mb-2"></h3>
+              <p id="modalProductPrice" class="fs-4 fw-bold text-success mb-3"></p>
+              <p id="modalProductDescription" class="text-muted"></p>
+            </div>
+            <div class="d-grid mt-3" id="modalProductAction">
+              <!-- El botón de agregar se inyecta por JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Modal Checkout / Carrito -->
+<div id="cart-modal" class="modal fade" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="cartModalLabel">Tu Pedido</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div id="cart-items" class="cart-items mb-3">
+          <!-- Items renderizados por JS -->
+        </div>
+
+        <div class="cart-summary text-end border-top pt-2 mb-3">
+          <p class="fs-5 mb-0">Total: <strong>$<span id="cart-total">0</span> MXN</strong></p>
+        </div>
+
+        <form id="checkout-form" class="checkout-form d-flex flex-column gap-3">
+          <div>
+            <label for="pickup-location" class="form-label small fw-bold">Punto de entrega en CDMX:</label>
+            <select id="pickup-location" class="form-select" required>
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="Metro Hidalgo (Martes / Jueves) - 11am">Metro Hidalgo (Martes / Jueves) - 11am</option>
+              <option value="Metro General Anaya (Lunes / Miércoles / Sábado) - 11am">Metro General Anaya (Lunes / Miércoles / Sábado) - 11am</option>
+              <option value="Metro Miguel A. de Quevedo (Lunes / Miércoles / Sábado) - 11am">Metro Miguel A. de Quevedo (Lunes / Miércoles / Sábado) - 11am</option>
+              <option value="Paquetería Correos de México (+ $70)">Paquetería Correos de México (+ $70)</option>
+              <option value="Paquetería Empresa privada + A cotizar (aprox. $300 nacional)">Paquetería Empresa privada + A cotizar (aprox. $300 nacional)</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="payment-method" class="form-label small fw-bold">Método de pago preferido:</label>
+            <select id="payment-method" class="form-select" required>
+              <option value="Transferencia (STP)">Transferencia bancaria</option>
+              <option value="Efectivo contra entrega">Efectivo contra entrega</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-whatsapp btn-lg w-100 mt-2">
+            Confirmar Pedido por WhatsApp 📲
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+  <script src="js/scripts_tienda.js"></script>
+<!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

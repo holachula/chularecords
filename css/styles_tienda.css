@@ -1,0 +1,135 @@
+
+:root {
+  --bg-color: #f7f7f8;
+  --card-bg: #ffffff;
+  --text-color: #111111;
+  --accent-color: #25d366; /* WhatsApp Green */
+  --border-color: #e2e2e8;
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding-bottom: 80px;
+}
+
+.header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.product-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.product-desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+  flex-grow: 1;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+.btn-add {
+  background: var(--text-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-btn {
+  background: var(--text-color);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* NUEVOS ESTILOS ESPECÍFICOS PARA EL CATÁLOGO Y CARROUSEL */
+
+/* Imágenes en las Cards del catálogo */
+.product-card-img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Imágenes dentro del Modal de Detalle */
+.modal-carousel-img {
+  max-height: 600px;
+  object-fit: none;
+  background-color: #f0f0f2;
+  border-radius: 6px;
+}
+
+/* Ajuste del botón de WhatsApp */
+.btn-whatsapp {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+}
+.btn-whatsapp:hover {
+  background-color: #1eb956;
+  color: #fff;
+}
